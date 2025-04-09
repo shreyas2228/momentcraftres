@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - MomentCrafters</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .gallery-item {
+            transition: all 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between">
+                <div class="flex space-x-7">
+                    <div>
+                        <a href="index.html" class="flex items-center py-4 px-2">
+                          
+                            <img src="https://t3.ftcdn.net/jpg/02/33/29/44/240_F_233294428_CBqlBai914aGOvSZpjGhYmiVLZqEOcOQ.jpg" alt="MomentCrafters Logo" class="h-20 mr-1 rounded-full ">
+                            <span class="font-semibold text-blue-500 text-3xl">MomentCrafters</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="index.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Home</a>
+                    <a href="vendor-list.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Vendors</a>
+                    <a href="gallery.html" class="py-4 px-2 text-blue-500 border-b-4 border-blue-500 font-semibold">Gallery</a>
+                    <a href="login.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Login</a>
+                    <a href="register.html" class="py-4 px-2 text-gray-500 font-semibold hover:text-blue-500 transition duration-300">Register</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Gallery Header -->
+    <div class="bg-blue-600 text-white py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold mb-4">Event Gallery</h1>
+            <p class="text-xl mb-8">Get inspired by our collection of beautifully crafted events</p>
+            <div class="flex justify-center space-x-4">
+                <button class="bg-white text-blue-600 px-6 py-2 rounded-full font-medium hover:bg-blue-50 transition duration-300 category-filter-btn">All Events</button>
+                <button class="bg-blue-500 text-white px-6 py-2 rounded-full font-medium hover:bg-blue-400 transition duration-300 category-filter-btn">Weddings</button>
+                <button class="bg-blue-500 text-white px-6 py-2 rounded-full font-medium hover:bg-blue-400 transition duration-300 category-filter-btn">Corporate</button>
+                <button class="bg-blue-500 text-white px-6 py-2 rounded-full font-medium hover:bg-blue-400 transition duration-300 category-filter-btn">Birthdays</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="container mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Gallery Item 1 -->
+            <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md">
+                <img src="https://images.pexels.com/photos/169198/pexels-photo-169198.jpeg" alt="Wedding" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-sm font-medium text-blue-600">Weddings</span>
+                        <div class="flex items-center">
+                            <i class="fas fa-heart text-red-500 mr-1"></i>
+                            <span class="text-sm">248</span>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Sarah & Michael's Wedding</h3>
+                    <p class="text-gray-600 text-sm mb-3">Photography by John Doe</p>
+                    <button class="text-blue-500 text-sm font-medium hover:text-blue-700">
+                        View Details
+                    </button>
+                </div>
+            </div>
+
+            <!-- Gallery Item 2 -->
+            <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md">
+                <img src="https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg" alt="Corporate Event" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-sm font-medium text-blue-600">Corporate</span>
+                        <div class="flex items-center">
+                            <i class="fas fa-heart text-red-500 mr-1"></i>
+                            <span class="text-sm">189</span>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Tech Conference 2023</h3>
+                    <p class="text-gray-600 text-sm mb-3">Planned by Elegant Events</p>
+                    <button class="text-blue-500 text-sm font-medium hover:text-blue-700">
+                        View Details
+                    </button>
+                </div>
+            </div>
+
+            <!-- Gallery Item 3 -->
+            <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md">
+                <img src="https://images.pexels.com/photos/2531188/pexels-photo-2531188.jpeg" alt="Birthday Party" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-sm font-medium text-blue-600">Birthdays</span>
+                        <div class="flex items-center">
+                            <i class="fas fa-heart text-red-500 mr-1"></i>
+                            <span class="text-sm">312</span>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Sophia's Sweet 16</h3>
+                    <p class="text-gray-600 text-sm mb-3">Catering by Gourmet Delights</p>
+                    <button class="text-blue-500 text-sm font-medium hover:text-blue-700">
+                        View Details
+                    </button>
+                </div>
+            </div>
+
+            <!-- Gallery Item 4 -->
+            <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md">
+                <img src="https://images.pexels.com/photos/3171837/pexels-photo-3171837.jpeg" alt="Wedding" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-sm font-medium text-blue-600">weddings</span>
+                        <div class="flex items-center">
+                            <i class="fas fa-heart text-red-500 mr-1"></i>
+                            <span class="text-sm">276</span>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Emma & James' Garden Wedding</h3>
+                    <p class="text-gray-600 text-sm mb-3">Photography by Jane Smith</p>
+                    <button class="text-blue-500 text-sm font-medium hover:text-blue-700 view-details-btn" data-id="4">
+                        View Details
+                    </button>
+                </div>
+            </div>
+
+            <!-- Gallery Item 5 -->
+            <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md">
+                <img src="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg" alt="Corporate Event" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-sm font-medium text-blue-600">Corporate</span>
+                        <div class="flex items-center">
+                            <i class="fas fa-heart text-red-500 mr-1"></i>
+                            <span class="text-sm">154</span>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Annual Gala Dinner</h3>
+                    <p class="text-gray-600 text-sm mb-3">Venue by Grand Hall</p>
+                    <button class="text-blue-500 text-sm font-medium hover:text-blue-700">
+                        View Details
+                    </button>
+                </div>
+            </div>
+
+            <!-- Gallery Item 6 -->
+            <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md">
+                <img src="https://images.pexels.com/photos/2536965/pexels-photo-2536965.jpeg" alt="Birthday Party" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-sm font-medium text-blue-600">Birthdays</span>
+                        <div class="flex items-center">
+                            <i class="fas fa-heart text-red-500 mr-1"></i>
+                            <span class="text-sm">298</span>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Liam's 1st Birthday</h3>
+                    <p class="text-gray-600 text-sm mb-3">Decor by Party Perfect</p>
+                    <button class="text-blue-500 text-sm font-medium hover:text-blue-700">
+                        View Details
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Load More Button -->
+        <div class="mt-12 text-center">
+            <button class="bg-blue-500 text-white px-6 py-3 rounded-full font-medium hover:bg-blue-600 transition duration-300 load-more-btn">
+                Load More
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-xl font-bold mb-4">MomentCrafters</h3>
+                    <p>Your perfect event starts here.</p>
+                </div>
+                <div class="grid grid-cols-2 gap-8">
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                        <ul>
+                            <li class="mb-2"><a href="index.html" class="hover:text-blue-300">Home</a></li>
+                            <li class="mb-2"><a href="vendor-list.html" class="hover:text-blue-300">Vendors</a></li>
+                            <li class="mb-2"><a href="gallery.html" class="hover:text-blue-300">Gallery</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-lg font-semibold mb-4">Legal</h4>
+                        <ul>
+                            <li class="mb-2"><a href="#" class="hover:text-blue-300">Privacy Policy</a></li>
+                            <li class="mb-2"><a href="#" class="hover:text-blue-300">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>&copy; 2023 MomentCrafters. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            function attachViewDetailsListeners() {
+                const viewDetailsButtons = document.querySelectorAll('.view-details-btn');
+                viewDetailsButtons.forEach(button => {
+                    button.removeEventListener('click', handleViewDetailsClick); 
+                    button.addEventListener('click', handleViewDetailsClick);
+                });
+            }
+
+            function handleViewDetailsClick(event) {
+                const itemId = event.target.getAttribute('data-id');
+                if (itemId) {
+                    window.location.href = `details.html?id=${itemId}`;
+                } else {
+                    alert('This item does not have a valid ID.');
+                    console.error('No data-id attribute found for this button.');
+                }
+            }
+
+            
+            const loadMoreButton = document.querySelector('.load-more-btn');
+            loadMoreButton.addEventListener('click', () => {
+                loadMoreButton.textContent = 'Loading...';
+                loadMoreButton.disabled = true;
+
+                setTimeout(() => {
+                    const galleryGrid = document.querySelector('.grid');
+                    const newItem = `
+                        <div class="gallery-item bg-white rounded-lg overflow-hidden shadow-md">
+                            <img src="https://images.pexels.com/photos/1234567/pexels-photo-1234567.jpeg" alt="New Event" class="w-full h-64 object-cover">
+                            <div class="p-4">
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="text-sm font-medium text-blue-600">New Category</span>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-heart text-red-500 mr-1"></i>
+                                        <span class="text-sm">100</span>
+                                    </div>
+                                </div>
+                                <h3 class="font-bold text-lg mb-2">New Event Title</h3>
+                                <p class="text-gray-600 text-sm mb-3">Details about the new event</p>
+                                <button class="text-blue-500 text-sm font-medium hover:text-blue-700 view-details-btn" data-id="7">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                    `;
+                    galleryGrid.insertAdjacentHTML('beforeend', newItem);
+
+                    attachViewDetailsListeners(); 
+
+                    loadMoreButton.textContent = 'Load More';
+                    loadMoreButton.disabled = false;
+
+                    
+                    galleryGrid.lastElementChild.scrollIntoView({ behavior: 'smooth' });
+                }, 1000); 
+            });
+
+            
+            const filterButtons = document.querySelectorAll('.category-filter-btn');
+            filterButtons.forEach(button => {
+                button.addEventListener('click', (event) => {
+                    
+                    filterButtons.forEach(btn => btn.classList.remove('bg-blue-600', 'text-white'));
+                   
+                    button.classList.add('bg-blue-600', 'text-white');
+
+                    const category = event.target.textContent.trim();
+                    const galleryItems = document.querySelectorAll('.gallery-item');
+                    let hasVisibleItems = false;
+
+                    galleryItems.forEach(item => {
+                        const itemCategory = item.querySelector('span.text-sm').textContent.trim();
+                        if (category === 'All Events' || itemCategory === category) {
+                            item.style.display = 'block';
+                            hasVisibleItems = true;
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+
+                    
+                    const noItemsMessage = document.querySelector('#no-items-message');
+                    if (!hasVisibleItems) {
+                        if (!noItemsMessage) {
+                            const message = document.createElement('p');
+                            message.id = 'no-items-message';
+                            message.textContent = 'No items found for this category.';
+                            message.className = 'text-center text-gray-500 mt-6';
+                            document.querySelector('.grid').insertAdjacentElement('afterend', message);
+                        }
+                    } else if (noItemsMessage) {
+                        noItemsMessage.remove();
+                    }
+                });
+            });
+
+            
+            attachViewDetailsListeners();
+        });
+    </script>
+</body>
+</html>
